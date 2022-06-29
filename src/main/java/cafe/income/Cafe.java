@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Cafe {
 
-    List<CoffeeOrder> coffeeOrders;
+    private List<CoffeeOrder> coffeeOrders;
 
     public Cafe(List<CoffeeOrder> coffeeOrders) {
         this.coffeeOrders = coffeeOrders;
@@ -17,7 +17,7 @@ public class Cafe {
         return Collections.unmodifiableList(coffeeOrders);
     }
 
-   public void addNewOrder(CoffeeOrder order){
+    public void addNewOrder(CoffeeOrder order){
         coffeeOrders.add(order);
    }
 
